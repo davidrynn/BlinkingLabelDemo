@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files = 'BlinkingLabel/Classes/**/*'
   
   s.resource_bundles = {
-    'BlinkingLabel' => ['BlinkingLabel/Assets/*.png', 'BlinkingLabel/*.xcassets']
+    'BlinkingLabel' => ['BlinkingLabel/Assets/*.png', 'BlinkingLabel/Extra.xcassets']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

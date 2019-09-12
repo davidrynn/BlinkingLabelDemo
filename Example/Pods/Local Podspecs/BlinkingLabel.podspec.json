@@ -23,7 +23,7 @@
   "resource_bundles": {
     "BlinkingLabel": [
       "BlinkingLabel/Assets/*.png",
-      "BlinkingLabel/*.xcassets"
+      "BlinkingLabel/Extra.xcassets"
     ]
   },
   "swift_version": "4.0"

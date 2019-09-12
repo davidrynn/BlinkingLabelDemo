@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Setup the BlinkingLabel
         blinkingLabel.text = "I blink!"
         blinkingLabel.font = UIFont.systemFont(ofSize: 20)
@@ -30,6 +29,12 @@ class ViewController: UIViewController {
         toggleButton.setTitleColor(.red, for: .normal)
         toggleButton.addTarget(self, action: #selector(toggleBlinking), for: .touchUpInside)
         view.addSubview(toggleButton)
+
+        //add label image
+        let imageView = UIImageView(image: blinkingLabel.image)
+        imageView.backgroundColor = .orange
+        view.addSubview(imageView)
+        imageView.frame = CGRect(x: 0, y: 100, width: 40, height: 40)
     }
 
     @objc func toggleBlinking() {
