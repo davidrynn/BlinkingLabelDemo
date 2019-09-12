@@ -8,8 +8,7 @@
 import UIKit
 
 public class BlinkingLabel : UILabel {
-    public let image = #imageLiteral(resourceName: "chair")
-        //UIImage(named: "chair", in: Bundle(for: BlinkingLabel.self), compatibleWith: nil)
+    public let image = UIImage(named: "chair", in: Bundle(for: BlinkingLabel.self), compatibleWith: nil)
     public func startBlinking() {
         let options : UIViewAnimationOptions = [.repeat, .autoreverse]
         UIView.animate(withDuration: 0.25, delay:0.0, options:options, animations: {
