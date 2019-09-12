@@ -12,7 +12,7 @@ import BlinkingLabel
 class ViewController: UIViewController {
 
     var isBlinking = false
-    let blinkingLabel = BlinkingLabel(frame: CGRect(x: 10, y: 20, width: 200, height: 30))
+    let blinkingLabel = BlinkLabel(frame: CGRect(x: 10, y: 20, width: 200, height: 30))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         view.addSubview(toggleButton)
 
         //add label image
-        let imageView = UIImageView(image: blinkingLabel.image)
+        let imageView = DemoImageView()
         imageView.backgroundColor = .orange
         view.addSubview(imageView)
         imageView.frame = CGRect(x: 0, y: 100, width: 40, height: 40)
